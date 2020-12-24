@@ -98,7 +98,7 @@ h1, h2, p {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(219, 219, 219,0.9); /* Black w/ opacity */
+  background-color: rgba(219, 219, 219,0.8); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -163,13 +163,6 @@ h1, h2, p {
     width: 100%;
   }
 }
-
-ul {
-  list-style: none;
-}
-ul li::before {
-  content: "📌 ";
-}
 </style>
 </head>
 <body>
@@ -189,7 +182,7 @@ Finally, to become a Man, you must never forget your origins. Don't ever forget 
 
 <span id="keyPhrases" align = 'center' class = "highlighted_text"> [key phrases] </span>
 <span id="keyPhrases_content" style="display:none">
-  <h1>If...</h1>
+  <h1>if...</h1>
 The word "if" opens nearly every other line of the poem, and is also the title of the piece itself.  The literal definition of "if" is a phrase used to express uncertainty about the future. In this poem, Kipling uses "if" to enhance the narrator's storytelling perspective as a father showing his son what constitutes a real Man.  The word also helps to establish the idea of masculinity as a distant goal, and one that should be chased after by his son. 
   <h1>Man</h1>
 Though this word only appears once in the entire poem, "Man"  represents an important theme of the poem, masculinity.  The narrator lists out to his son all the defining attributes of a Man, and tells his son that when he accomplishes these feats, he too will be a real Man. The capitalizing of the word is significant because the author chooses to use it as a proper noun-- meaning that "man" is not an arbitrary characteristic, but rather a n honor given to a select group of people. This helps enhance Kipling's and the narrator's message that being a Man  should be treated like a badge of honor because of all the difficulties that come with keeping up the façade of strength and fortitude.
@@ -211,6 +204,19 @@ Though this word only appears once in the entire poem, "Man"  represents an impo
  Every other line begins with "If you can..." The usage of this anaphora is used to illustrate the long list of demands that the narrator believes is necessary for his son to become a man. In having this constant repetition, it also adds a sense of ridicule to the whole idea of masculinity presented in this poem. Another way to look at this is that the social norm or concept for masculinity is very archaic and does not really account for happiness or satisfaction in any way, and perhaps the narrator is trying to highlight the shortcomings of these perceptions in a sarcastic manner to his son.
   <h1><br />Juxtaposition</h1>
 When the narrator discusses the traits of masculinity, especially in stanzas 1, 2, and 4, Kipling often juxtaposes contrary ideas or situations to show how the narrator believes a man should be a versatile master of many social and psychological situations. In the first stanza, Kipling juxtaposes one's self-esteem with the views or accusations of others around you, conveying the importance of self-confidence for a man. This idea that men should be kind of a rock was fairly popular around the time that the poem was written, in 1943 due to the ongoing World War, where the soldiers were thought to embody the ideal of masculinity. The second stanza juxtaposes being grounded in thought with ambition, and the fourth juxtaposes success and staying connected with your old friends. These last two uses of juxtaposition further contribute to the overall message of the author that this idea of masculinity presented in the poem requires versatility and can almost seem overwhelming with all the things that a real man must keep in mind.
+</span>
+
+<span id="research" align = 'center' class = "highlighted_text"> [research] </span>
+<span id="research_content" style="display:none">
+From reading other analyses of the poem, I think that I missed out on a motivational tone that many other readers noticed or caught on. In fact, I even learned that the poem is considered to be so inspiring that a quote from it is displayed prominently on the Wimbledon Centre Court: "If you can meet with triumph and disaster and treat those two impostors just the same..." I can definitely see how this poem could be considered inspirational, since it does advise the young man how to act in the face of defeat or in the face of a challenge. I think that I interpreted it differently because I saw the narrator's directed speech as more patronizing than warm, though the ending phrases do, in hindsight, convey a very familial and helpful attitude. <br /> <br />
+Some readers of the poem also mentioned that this poem could be thought about as a pep talk to inspire the narrator or even Kipling himself to be a virtuous and strong person, which is a very interesting take. I did not think of this perspective in my initial readings, and no I think that "If-" could very well serve as a motivational poem, whether it was written for outside readers or just for the author himself. <br /> <br />
+Rudyard Kipling was born in India in 1865. At the age of five, his parents sent him back to England for education, where he proved to be a troublesome child. In adulthood, he was renowned for his literary talents, winning the 1907 Nobel Prize for literature, and writing the iconic Jungle Book. However, his political views drew much criticism, as critics call him a colonialist, racist, and warmonger. It is somewhat ironic, then, that one of his most recognizable poems, "If", talks about the attributes of a virtuous man. <br /> <br />
+Works cited: <br />
+<ol>
+<li>Jenson, Jamie. “Analysis of If- by Rudyard Kipling.” Poem Analysis, 20 Nov. 2020, poemanalysis.com/rudyard-kipling/if/.</li>
+<li>“Rudyard Kipling.” Poetry Foundation, Poetry Foundation, www.poetryfoundation.org/poets/rudyard-kipling. </li>
+<li>Scrbbly. “'If' by Rudyard Kipling - Poetry Analysis.” Medium, Medium, 28 Apr. 2020, medium.com/@scrbblyblog/if-by-rudyard-kipling-poetry-analysis-beadeb159fd8.</li>
+</ol>
 </span>
 
 <div id="poem">
@@ -350,6 +356,12 @@ var litDevices_text3 = document.getElementById("litDevices_text3");
 litDevices_text3.onclick = function(){
   modal.style.display = "block";
   caption.innerHTML = document.getElementById("litDevices_content").innerHTML
+}
+
+var research = document.getElementById("research");
+research.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("research_content").innerHTML
 }
 
 // Get the <span> element that closes the modal

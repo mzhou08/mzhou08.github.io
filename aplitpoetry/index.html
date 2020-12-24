@@ -148,7 +148,16 @@ The Modal
 <div id="paraphraseModal" class="modal">
   <span class="close">&times;</span>
   <!--<div class="modal-content" id="text01">not this value</div>-->
-  <div id="paraphrase_caption" align='center'>ddd</div>
+  <div id="paraphrase_caption" align='center'>
+	  <pre>
+	  The overall message of the poem is one outlining the "requirements" that the narrator believes are necessary to be a Man. These requirements are mostly psychological, and they are presented in a long, rambling list.
+My son, to mature into a Man, you'll need to make sure you fit these descriptions:
+A Man is confident in himself, patient, and level-headed. 
+A Man must be able to balance his wildest dreams and his rational mind. He must be driven yet avoid getting hung up on his aspirations. He must be strong in the face of defeat or loss, no matter how severe.
+Finally, to become a Man, you must never forget your origins. Don't ever forget your friends or where you came from. IF you can do all this, son, you'll be a Man.
+
+	  </pre>	
+  </div>
 </div>
 
 <script>
@@ -177,7 +186,7 @@ paraphrase.onclick = function(){
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[1];
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

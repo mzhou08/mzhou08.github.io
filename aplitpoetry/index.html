@@ -3,7 +3,74 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif; background-color: #dedae3;}
+body {
+  background: #FFF;
+  color: #111;
+  font: 18px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+  text-align: center;
+}
+span.indented_line { padding-left: 20px ; }
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  }
+
+  #poem { 
+    margin: auto;
+    padding: 20px 0;
+    text-align: left;
+    width: 600px;
+  }
+		
+  h1, h2 {
+    font-weight: normal;
+    text-align: center;
+  }
+				
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+			
+  h2 {
+    color: #666;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+				
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* The magic of selectors begins... */
+
+  h2:before {
+    content: '— ';
+  }
+
+  h2:after {
+    content: ' —';
+  }
+
+  #poem h2 + p:first-letter {
+    float: left;
+    font-size: 50px;
+    line-height: 1;
+    margin: 2px 5px 0 0;
+  }
+
+  #poem p:first-line {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+  }
+
+  #poem p:last-child {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
 
 #myImg {
   border-radius: 5px;
@@ -94,47 +161,52 @@ body {font-family: Arial, Helvetica, sans-serif; background-color: #dedae3;}
 </head>
 <body>
 
-<h2>AP Literature Poetry Analysis: "If-" by Rudyard Kipling</h2>
-<p>Project by Michael Zhou</p>
+<h1>AP Literature Poetry Analysis Project by Michael Zhou</h1>
 <p>To view the analysis, click on the highlighted text throughout the poem. </p>
 <div id="paraphrase" align = 'center'> [paraphrase] </div>
-<pre>
-If you can keep your head when all about you   
-	Are losing theirs and blaming it on you,   
-If you can trust yourself when all men doubt you,
-	But make allowance for their doubting too;   
-If you can wait and not be tired by waiting,
-	Or being lied about, don’t deal in lies,
-Or being hated, don’t give way to hating,
-	And yet don’t look too good, nor talk too wise:
+<div id="poem">
+<h1>If-</h1>
+<h2>by Rudyard Kipling</h2>
+<p>
+If you can keep your head when all about you<br />   
+<span class="indented_line">Are losing theirs and blaming it on you,</span><br />  
+If you can trust yourself when all men doubt you,<br />
+<span class="indented_line">But make allowance for their doubting too;</span><br /> 
+If you can wait and not be tired by waiting,<br />
+<span class="indented_line">Or being lied about, don’t deal in lies,</span><br />
+Or being hated, don’t give way to hating,<br />
+<span class="indented_line">And yet don’t look too good, nor talk too wise:</span></p>
 
-If you can dream—and not make dreams your master;   
-	If you can think—and not make thoughts your aim;   
-If you can meet with Triumph and Disaster
-	And treat those two impostors just the same;   
-If you can bear to hear the truth you’ve spoken
-	Twisted by knaves to make a trap for fools,
-Or watch the things you gave your life to, broken,
-	And stoop and build ’em up with worn-out tools:
+<p>
+If you can dream—and not make dreams your master;<br />   
+<span class="indented_line">If you can think—and not make thoughts your aim;</span><br /> 
+If you can meet with Triumph and Disaster<br />
+<span class="indented_line">And treat those two impostors just the same;</span><br />
+If you can bear to hear the truth you’ve spoken<br />
+<span class="indented_line">Twisted by knaves to make a trap for fools,</span><br />
+Or watch the things you gave your life to, broken,<br />
+<span class="indented_line">And stoop and build ’em up with worn-out tools:</span></p>
 
-If you can make one heap of all your winnings
-	And risk it on one turn of pitch-and-toss,
-And lose, and start again at your beginnings
-	And never breathe a word about your loss;
-If you can force your heart and nerve and sinew
-	To serve your turn long after they are gone,   
-And so hold on when there is nothing in you
-	Except the Will which says to them: ‘Hold on!’
+<p>
+If you can make one heap of all your winnings<br />
+<span class="indented_line">And risk it on one turn of pitch-and-toss,</span><br />
+And lose, and start again at your beginnings<br />
+<span class="indented_line">And never breathe a word about your loss;</span><br />
+If you can force your heart and nerve and sinew<br />
+<span class="indented_line">To serve your turn long after they are gone,</span><br /> 
+And so hold on when there is nothing in you<br />
+<span class="indented_line">Except the Will which says to them: ‘Hold on!’</span></p>
 
-If you can talk with crowds and keep your virtue,   
-	Or walk with Kings—nor lose the common touch,
-If neither foes nor loving friends can hurt you,
-	If all men count with you, but none too much;
-If you can fill the unforgiving minute
-	With sixty seconds’ worth of distance run,   
-Yours is the Earth and everything that’s in it,   
-	And—which is more—you’ll be a Man, my son!
-</pre>
+<p>
+If you can talk with crowds and keep your virtue,<br />  
+<span class="indented_line">Or walk with Kings—nor lose the common touch,</span><br />
+If neither foes nor loving friends can hurt you,<br />
+<span class="indented_line">If all men count with you, but none too much;</span><br />
+If you can fill the unforgiving minute<br />
+<span class="indented_line">With sixty seconds’ worth of distance run,</span><br />   
+Yours is the Earth and everything that’s in it,<br />   
+<span class="indented_line">And—which is more—you’ll be a Man, my son!</span></p>
+</poem>
 
 <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
 
@@ -148,15 +220,14 @@ The Modal
 <div id="paraphraseModal" class="modal">
   <span class="close">&times;</span>
   <!--<div class="modal-content" id="text01">not this value</div>-->
-  <div id="paraphrase_caption" align='center'>
-	  <pre>
-	  The overall message of the poem is one outlining the "requirements" that the narrator believes are necessary to be a Man. These requirements are mostly psychological, and they are presented in a long, rambling list.
-My son, to mature into a Man, you'll need to make sure you fit these descriptions:
-A Man is confident in himself, patient, and level-headed. 
-A Man must be able to balance his wildest dreams and his rational mind. He must be driven yet avoid getting hung up on his aspirations. He must be strong in the face of defeat or loss, no matter how severe.
-Finally, to become a Man, you must never forget your origins. Don't ever forget your friends or where you came from. IF you can do all this, son, you'll be a Man.
-
-	  </pre>	
+  <div id="paraphrase_caption" class="modal-content" align='left'>
+The overall message of the poem is one outlining the "requirements" that the narrator believes are necessary to be a Man. These requirements are mostly psychological, and they are presented in a long, rambling list. <br/>
+My son, to mature into a Man, you'll need to make sure you fit these descriptions: <br/>
+A Man is confident in himself, patient, and level-headed. <br/>
+A Man must be able to balance his wildest dreams and his rational mind. <br/>
+He must be driven yet avoid getting hung up on his aspirations.<br/>
+He must be strong in the face of defeat or loss, no matter how severe. <br/>
+Finally, to become a Man, you must never forget your origins. Don't ever forget your friends or where you came from. IF you can do all this, son, you'll be a Man.	
   </div>
 </div>
 

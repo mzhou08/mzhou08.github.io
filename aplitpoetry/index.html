@@ -163,7 +163,22 @@ h1, h2, p {
 
 <h1>AP Literature Poetry Analysis Project by Michael Zhou</h1>
 <p>To view the analysis, click on the highlighted text throughout the poem. </p>
-<div id="paraphrase" align = 'center'> [paraphrase] </div>
+<span id="paraphrase" align = 'center'> [paraphrase] </span>
+<span id="paraphrase_content" style="display:none">
+The overall message of the poem is one outlining the "requirements" that the narrator believes are necessary to be a Man. These requirements are mostly psychological, and they are presented in a long, rambling list. <br/>
+My son, to mature into a Man, you'll need to make sure you fit these descriptions: <br/>
+A Man is confident in himself, patient, and level-headed. <br/>
+A Man must be able to balance his wildest dreams and his rational mind. <br/>
+He must be driven yet avoid getting hung up on his aspirations.<br/>
+He must be strong in the face of defeat or loss, no matter how severe. <br/>
+Finally, to become a Man, you must never forget your origins. Don't ever forget your friends or where you came from. IF you can do all this, son, you'll be a Man.	
+</span>
+
+<span id="another" align = 'center'> [another] </span>
+<span id="another_content" style="display:none">
+another
+</span>
+
 <div id="poem">
 <h1>If-</h1>
 <h2>by Rudyard Kipling</h2>
@@ -215,19 +230,12 @@ The Modal
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
-</div> -->
+</div>-->
 
-<div id="paraphraseModal" class="modal">
+<div id="modal" class="modal">
   <span class="close">&times;</span>
-  <!--<div class="modal-content" id="text01">not this value</div>-->
-  <div id="paraphrase_caption" class="modal-content" align='left'>
-The overall message of the poem is one outlining the "requirements" that the narrator believes are necessary to be a Man. These requirements are mostly psychological, and they are presented in a long, rambling list. <br/>
-My son, to mature into a Man, you'll need to make sure you fit these descriptions: <br/>
-A Man is confident in himself, patient, and level-headed. <br/>
-A Man must be able to balance his wildest dreams and his rational mind. <br/>
-He must be driven yet avoid getting hung up on his aspirations.<br/>
-He must be strong in the face of defeat or loss, no matter how severe. <br/>
-Finally, to become a Man, you must never forget your origins. Don't ever forget your friends or where you came from. IF you can do all this, son, you'll be a Man.	
+  <div id="modal_caption" class="modal-content" align='left'>
+    origin
   </div>
 </div>
 
@@ -246,14 +254,21 @@ img.onclick = function(){
 } */
 
 // Get the modal
-var paraphraseModal = document.getElementById("paraphraseModal");
+var modal = document.getElementById("modal");
+var caption = document.getElementById("modal_caption");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var paraphrase = document.getElementById("paraphrase");
-var paraphrase_caption = document.getElementById("paraphrase_caption");
 paraphrase.onclick = function(){
-  paraphraseModal.style.display = "block";
-  paraphraseModal.value = "text";
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("paraphrase_content").innerHTML
+}
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var another = document.getElementById("another");
+another.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("another_content").innerHTML
 }
 
 // Get the <span> element that closes the modal
@@ -261,7 +276,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  paraphraseModal.style.display = "none";
+  modal.style.display = "none";
 }
 </script>
 

@@ -170,9 +170,10 @@ var paraphraseModal = document.getElementById("paraphraseModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var paraphrase = document.getElementById("paraphrase");
-var text_caption = document.getElementById("paraphrase_caption");
+var paraphrase_caption = document.getElementById("paraphrase_caption");
 paraphrase.onclick = function(){
   paraphraseModal.style.display = "block";
+  paraphraseModal.value = "text";
 }
 
 // Get the <span> element that closes the modal

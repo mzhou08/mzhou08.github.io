@@ -9,6 +9,12 @@ body {
   font: 18px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
   text-align: center;
 }
+
+span.highlighted_text {
+  background: #FFF;
+  color: blue;
+}
+
 span.indented_line { padding-left: 20px ; }
 h1, h2, p {
   margin: 0;
@@ -162,8 +168,8 @@ h1, h2, p {
 <body>
 
 <h1>AP Literature Poetry Analysis Project by Michael Zhou</h1>
-<p>To view the analysis, click on the highlighted text throughout the poem. </p>
-<span id="paraphrase" align = 'center'> [paraphrase] </span>
+<p>To view the analysis, click on the blue text throughout the poem. Or, use the navigation bar below.</p>
+<span id="paraphrase" align = 'center' class = "highlighted_text"> [paraphrase] </span>
 <span id="paraphrase_content" style="display:none">
 The overall message of the poem is one outlining the "requirements" that the narrator believes are necessary to be a Man. These requirements are mostly psychological, and they are presented in a long, rambling list. <br/>
 My son, to mature into a Man, you'll need to make sure you fit these descriptions: <br/>
@@ -174,7 +180,7 @@ He must be strong in the face of defeat or loss, no matter how severe. <br/>
 Finally, to become a Man, you must never forget your origins. Don't ever forget your friends or where you came from. IF you can do all this, son, you'll be a Man.	
 </span>
 
-<span id="keyPhrases" align = 'center'> [key phrases] </span>
+<span id="keyPhrases" align = 'center' class = "highlighted_text"> [key phrases] </span>
 <span id="keyPhrases_content" style="display:none">
   <h1>if...</h1>
 The word "if" opens nearly every other line of the poem, and is also the title of the piece itself.  The literal definition of "if" is a phrase used to express uncertainty about the future. In this poem, Kipling uses "if" to enhance the narrator's storytelling perspective as a father showing his son what constitutes a real Man.  The word also helps to establish the idea of masculinity as a distant goal, and one that should be chased after by his son. 
@@ -182,7 +188,7 @@ The word "if" opens nearly every other line of the poem, and is also the title o
 Though this word only appears once in the entire poem, "Man"  represents an important theme of the poem, masculinity.  The narrator lists out to his son all the defining attributes of a Man, and tells his son that when he accomplishes these feats, he too will be a real Man. The capitalizing of the word is significant because the author chooses to use it as a proper noun-- meaning that "man" is not an arbitrary characteristic, but rather a n honor given to a select group of people. This helps enhance Kipling's and the narrator's message that being a Man  should be treated like a badge of honor because of all the difficulties that come with keeping up the façade of strength and fortitude.
 </span>
 
-<span id="structure" align = 'center'> [structure] </span>
+<span id="structure" align = 'center' class = "highlighted_text"> [structure] </span>
 <span id="structure_content" style="display:none">
 <ul>
 <li>Kipling organizes his poem If- as a list of responses to many scenarios.</li> 
@@ -192,7 +198,7 @@ Though this word only appears once in the entire poem, "Man"  represents an impo
 </ul>
 </span>
 
-<span id="litDevices" align = 'center'> [lit. devices] </span>
+<span id="litDevices" align = 'center' class = "highlighted_text"> [lit. devices] </span>
 <span id="litDevices_content" style="display:none">
   <h1>Parallelism</h1>
  Every other line begins with "If you can..." The usage of this anaphora is used to illustrate the long list of demands that the narrator believes is necessary for his son to become a man. In having this constant repetition, it also adds a sense of ridicule to the whole idea of masculinity presented in this poem. Another way to look at this is that the social norm or concept for masculinity is very archaic and does not really account for happiness or satisfaction in any way, and perhaps the narrator is trying to highlight the shortcomings of these perceptions in a sarcastic manner to his son.
@@ -204,9 +210,9 @@ When the narrator discusses the traits of masculinity, especially in stanzas 1, 
 <h1>If-</h1>
 <h2>by Rudyard Kipling</h2>
 <p>
-If you can keep your head when all about you<br />   
+<span id = "keyPhrases_text1" class="highlighted_text">If</span> you can keep your head when all about you<br />   
 <span class="indented_line">Are losing theirs and blaming it on you,</span><br />  
-If you can trust yourself when all men doubt you,<br />
+<span id = "litDevices_text1" class="highlighted_text">If you can </span>trust yourself when all men doubt you,<br />
 <span class="indented_line">But make allowance for their doubting too;</span><br /> 
 If you can wait and not be tired by waiting,<br />
 <span class="indented_line">Or being lied about, don’t deal in lies,</span><br />
@@ -214,9 +220,9 @@ Or being hated, don’t give way to hating,<br />
 <span class="indented_line">And yet don’t look too good, nor talk too wise:</span></p>
 
 <p>
-If you can dream—and not make dreams your master;<br />   
-<span class="indented_line">If you can think—and not make thoughts your aim;</span><br /> 
-If you can meet with Triumph and Disaster<br />
+<span id = "litDevices_text2" class="highlighted_text"> If you can dream—and not make dreams your master;<br /> 
+<span class="indented_line">If you can think—and not make thoughts your aim;</span> </span> <br /> 
+If you can meet with Triumph and Disaster <br />
 <span class="indented_line">And treat those two impostors just the same;</span><br />
 If you can bear to hear the truth you’ve spoken<br />
 <span class="indented_line">Twisted by knaves to make a trap for fools,</span><br />
@@ -224,8 +230,8 @@ Or watch the things you gave your life to, broken,<br />
 <span class="indented_line">And stoop and build ’em up with worn-out tools:</span></p>
 
 <p>
-If you can make one heap of all your winnings<br />
-<span class="indented_line">And risk it on one turn of pitch-and-toss,</span><br />
+<span id="structure_text" class = "highlighted_text">If you can make one heap of all your winnings<br />
+<span class="indented_line">And risk it on one turn of pitch-and-toss,</span> </span> <br />
 And lose, and start again at your beginnings<br />
 <span class="indented_line">And never breathe a word about your loss;</span><br />
 If you can force your heart and nerve and sinew<br />
@@ -234,14 +240,14 @@ And so hold on when there is nothing in you<br />
 <span class="indented_line">Except the Will which says to them: ‘Hold on!’</span></p>
 
 <p>
-If you can talk with crowds and keep your virtue,<br />  
-<span class="indented_line">Or walk with Kings—nor lose the common touch,</span><br />
+<span id = "litDevices_text3" class = "highlighted_text"> If you can talk with crowds and keep your virtue,<br />  
+<span class="indented_line">Or walk with Kings—nor lose the common touch,</span> </span> <br />
 If neither foes nor loving friends can hurt you,<br />
 <span class="indented_line">If all men count with you, but none too much;</span><br />
 If you can fill the unforgiving minute<br />
 <span class="indented_line">With sixty seconds’ worth of distance run,</span><br />   
 Yours is the Earth and everything that’s in it,<br />   
-<span class="indented_line">And—which is more—you’ll be a Man, my son!</span></p>
+<span class="indented_line">And—which is more—you’ll be a <span id = "keyPhrases_text2" class="highlighted_text">Man</span>, my son!</span></p>
 </poem>
 
 <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
@@ -291,14 +297,50 @@ keyPhrases.onclick = function(){
   caption.innerHTML = document.getElementById("keyPhrases_content").innerHTML
 }
 
+var keyPhrases_text1 = document.getElementById("keyPhrases_text1");
+keyPhrases_text1.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("keyPhrases_content").innerHTML
+}
+
+var keyPhrases_text2 = document.getElementById("keyPhrases_text2");
+keyPhrases_text2.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("keyPhrases_content").innerHTML
+}
+
 var structure = document.getElementById("structure");
 structure.onclick = function(){
   modal.style.display = "block";
   caption.innerHTML = document.getElementById("structure_content").innerHTML
 }
 
+var structure_text = document.getElementById("structure_text");
+structure_text.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("structure_content").innerHTML
+}
+
 var litDevices = document.getElementById("litDevices");
 litDevices.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("litDevices_content").innerHTML
+}
+
+var litDevices_text1 = document.getElementById("litDevices_text1");
+litDevices_text1.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("litDevices_content").innerHTML
+}
+
+var litDevices_text2 = document.getElementById("litDevices_text2");
+litDevices_text2.onclick = function(){
+  modal.style.display = "block";
+  caption.innerHTML = document.getElementById("litDevices_content").innerHTML
+}
+
+var litDevices_text3 = document.getElementById("litDevices_text3");
+litDevices_text3.onclick = function(){
   modal.style.display = "block";
   caption.innerHTML = document.getElementById("litDevices_content").innerHTML
 }

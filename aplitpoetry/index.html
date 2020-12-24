@@ -280,15 +280,6 @@ Yours is the Earth and everything that’s in it,<br />
 <span class="indented_line">And—which is more—you’ll be a <span id = "keyPhrases_text2" class="highlighted_text">Man</span>, my son!</span></p>
 </poem>
 
-<!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
-
-The Modal
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>-->
-
 <div id="modal" class="modal">
   <span class="close">&times;</span>
   <div id="modal_caption" class="modal-content" align='left'>
@@ -297,24 +288,11 @@ The Modal
 </div>
 
 <script>
-/* // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-} */
 
 // Get the modal
 var modal = document.getElementById("modal");
 var caption = document.getElementById("modal_caption");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var paraphrase = document.getElementById("paraphrase");
 paraphrase.onclick = function(){
   modal.style.display = "block";
